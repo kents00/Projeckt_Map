@@ -189,15 +189,6 @@ class Projeckt_Map:
                                         highlightcolor="black",
                                         text='''Lacunarity :''',
                                         width=69)
-
-                self.Color = tk.Message(top)
-                self.Color.place(relx=0.65, rely=0.733, relheight=0.051, relwidth=0.082)
-                self.Color.configure(background="#d9d9d9",
-                                foreground="#000000",
-                                highlightbackground="#d9d9d9",
-                                highlightcolor="black",
-                                text='''Color :''',
-                                width=60)
                                 
                 self.Threshold = tk.Message(top)
                 self.Threshold.place(relx=0.667, rely=0.644, relheight=0.051
