@@ -346,16 +346,6 @@ class Projeckt_Map:
                                         highlightcolor="black",
                                         pady="0",
                                         text='''Save''',)
-
-                self.Add_Color = ttk.Combobox(top)
-                self.Add_Color.place(relx=0.733, rely=0.733, relheight=0.047
-                        , relwidth=0.238)
-                self.Add_Color.configure(textvariable=gui_support.combobox)
-                self.Add_Color.configure(takefocus="")
-
-                self.Text_Logo = tk.Message(top)
-                self.Text_Logo.place(relx=0.017, rely=0.867, relheight=0.051
-                        , relwidth=0.15)
                         
                 self.Text_Logo.configure(background="#d9d9d9",
                                         foreground="#000000",
