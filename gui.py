@@ -189,7 +189,7 @@ class Projeckt_Map:
                                         highlightcolor="black",
                                         text='''Lacunarity :''',
                                         width=69)
-                                
+                                        
                 self.Threshold = tk.Message(top)
                 self.Threshold.place(relx=0.667, rely=0.644, relheight=0.051
                         , relwidth=0.1)
