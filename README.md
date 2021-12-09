@@ -4,7 +4,7 @@
 Create your own custom terrain map in 2D 
 
 ## Setup ##
-If you don't want to build up a virtual environment, [go here](https://virtualenv.pypa.io/en/latest/installation.html#via-pip). Alternatively, you may utilize my built-in environment by unzipping the **env** folder.
+If you want to build up a virtual environment, [go here](https://virtualenv.pypa.io/en/latest/installation.html#via-pip). Alternatively, you may utilize my built-in environment by unzipping the **env** folder.
 
 - Create your working environment and virtualenv:
 ```
