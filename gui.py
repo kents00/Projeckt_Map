@@ -116,11 +116,11 @@ class Projeckt_Map:
                 self.Preview_Image = tk.Canvas(top, height=600, width=600)
                 self.Preview_Image.pack()
 
-                self.image = (Image.open("bin/No_image.jpeg"))
+                self.image = (Image.open("lib/bin/No_image.jpeg"))
                 self.resize_image = self.image.resize((600, 450), Image.ANTIALIAS)
                 self.img = ImageTk.PhotoImage(self.resize_image)
 
-                self.update_img = ImageTk.PhotoImage(Image.open("bin/result_veg.jpeg"))
+                self.update_img = ImageTk.PhotoImage(Image.open("lib/bin/result_veg.jpeg"))
 
                 self.image_id = self.Preview_Image.create_image(-115, -50, image=self.img, anchor=tk.NW, )
                 self.Preview_Image.place(relx=0.017, rely=0.067, relheight=0.784
@@ -331,7 +331,7 @@ class Projeckt_Map:
                                         pady="0",
                                         text='''Generate''',)
 
-                self.Save_button = tk.Button(top, command=lambda:save(path="D:/Projects_Prog/Projectzoid/Projectzoid/gui_beta/output", filetype="png"))
+                self.Save_button = tk.Button(top, command=lambda:save(path="gui_beta/output", filetype="png"))
                 self.Save_button.place(relx=0.85, rely=0.867, height=24, width=67)
                 self.Save_button.configure(activebackground="#ececec",
                                         activeforeground="#000000",
@@ -361,7 +361,7 @@ class Projeckt_Map:
                                         width=90)
 
                 def update_image(self, *args, **kwargs):
-                        self.update_img = ImageTk.PhotoImage(Image.open('bin/result_veg.jpeg'))
+                        self.update_img = ImageTk.PhotoImage(Image.open('lib/bin/result_veg.jpeg'))
                         self.Preview_Image.itemconfig(self.image_id, image=self.update_img)
 
                 def save(path, filetype):
