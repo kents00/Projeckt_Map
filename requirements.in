@@ -1,0 +1,4 @@
+noise==1.2.2
+numpy==1.21.3
+pillow==8.4.0
+perlin-noise==1.8

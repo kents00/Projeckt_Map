@@ -1,6 +1,4 @@
 from PIL import Image
-import numpy as np
-
 
 class Basemap:
     def __init__(self, width, height, generate_map=""):
@@ -37,9 +35,3 @@ class Basemap:
                 print("Invalid input")
         else:
             print("Map type not found")
-        
-height = int(input("Enter the height of the map: "))
-width = int(input("Enter the width of the map: "))
-map_type = input("Enter the type of map you want to create: ")
-
-generate_amp = Basemap(width, height, generate_map=map_type)

@@ -1,6 +1,5 @@
 import noise
 import numpy as np
-from PIL import Image, ImageTk
 import random
 import math
 
@@ -43,7 +42,7 @@ class BaseColor:
 class GenerateMap:
 
     def __init__(self, size=(50, 50), color_range=10, color_perlin_scale=0.025, scale=350, octaves=10, persistance=0.6,
-                 lacunarity=3.0, x_starting_pos=1, y_starting_pos=1, threshold=-0.09):
+                 lacunarity=3.0, x_starting_pos=0, y_starting_pos=0, threshold=-0.09):
         self.scale = scale
         self.octaves = octaves
         self.persistance = persistance
@@ -153,3 +152,7 @@ class GenerateMap:
 
 Paper_Color = (145, 135, 60)
 Vegetation = (0, 128, 0)
+
+def random_seed():
+    seed = random.randint(0, 1000)
+    return seed 

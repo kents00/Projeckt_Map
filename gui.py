@@ -1,12 +1,8 @@
 import sys
-from tkinter import PhotoImage
-import time
-from tkinter.constants import END
-from tkinter import filedialog
 import os
 import uuid
+from PIL import Image, ImageTk
 
-time.sleep(10)
 
 try:
     import Tkinter as tk
@@ -189,7 +185,16 @@ class Projeckt_Map:
                                         highlightcolor="black",
                                         text='''Lacunarity :''',
                                         width=69)
-                                        
+
+                self.Color = tk.Message(top)
+                self.Color.place(relx=0.65, rely=0.733, relheight=0.051, relwidth=0.082)
+                self.Color.configure(background="#d9d9d9",
+                                foreground="#000000",
+                                highlightbackground="#d9d9d9",
+                                highlightcolor="black",
+                                text='''Color :''',
+                                width=60)
+                                
                 self.Threshold = tk.Message(top)
                 self.Threshold.place(relx=0.667, rely=0.644, relheight=0.051
                         , relwidth=0.1)
@@ -337,6 +342,16 @@ class Projeckt_Map:
                                         highlightcolor="black",
                                         pady="0",
                                         text='''Save''',)
+
+                self.Add_Color = ttk.Combobox(top)
+                self.Add_Color.place(relx=0.733, rely=0.733, relheight=0.047
+                        , relwidth=0.238)
+                self.Add_Color.configure(textvariable=gui_support.combobox)
+                self.Add_Color.configure(takefocus="")
+
+                self.Text_Logo = tk.Message(top)
+                self.Text_Logo.place(relx=0.017, rely=0.867, relheight=0.051
+                        , relwidth=0.15)
                         
                 self.Text_Logo.configure(background="#d9d9d9",
                                         foreground="#000000",
