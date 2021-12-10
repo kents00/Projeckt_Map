@@ -4,7 +4,7 @@
 Create your own custom terrain map in 2D 
 
 ## Setup ##
-If you want to build up a virtual environment, [go here](https://virtualenv.pypa.io/en/latest/installation.html#via-pip). Alternatively, you may utilize my built-in environment by unzipping the **env** folder.
+If you want to build up a virtual environment, [go here](https://virtualenv.pypa.io/en/latest/installation.html#via-pip). Alternatively, you may utilize my built-in environment by unzipping the **env** folder. Is there an issue installing tkinter in any operating system? [click here](https://tkdocs.com/tutorial/install.html#install-win-python)
 
 - Create your working environment and virtualenv:
 ```
@@ -53,3 +53,4 @@ $ python test.py
 
 **Threshold** :
 - It restricts the threshold per color, similar to a sea level.
+
