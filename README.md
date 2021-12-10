@@ -24,6 +24,13 @@ $ pip install -r requirements.txt
 $ python gui.py
 ```
 
+- Run test:
+
+ This is inside the "lib" subdirectory
+```    
+$ python test.py
+```
+
 ## How it works ##
 
 **Seed** :
