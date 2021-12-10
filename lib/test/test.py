@@ -17,24 +17,24 @@ class Basemap:
         self.sand = (210, 200,160)
 
         if map_type == "basemap":
-            print("Creating base image \nPlease select a number below \n\033[32;1m1.\033[0m Dark green \033[32;1m2.\033[0m Medium green \033[32;1m3.\033[0m Light green \033[32;1m4.\033[0m light white")
+            print("\n\033[32;1mCreating Base Image\033[0m \nPlease select a number below \n\033[32;1m1.\033[0m Dark green \033[32;1m2.\033[0m Medium green \033[32;1m3.\033[0m Light green \033[32;1m4.\033[0m Light white")
             select = input(">")
             if select == "1":
                 base_image = Image.new('RGB', (self.width, self.height), color=self.dark)
                 base_image.save('output/' + str(uuid.uuid4()) + '.png')
-                print("Dark grass created")
+                print("\n\033[32;1mDark green created\033[0m")
             elif select == "2":
                 base_image = Image.new('RGB', (self.width, self.height), color=self.meduim)
                 base_image.save('output/' + str(uuid.uuid4()) + '.png')
-                print("Dark grass created")
+                print("\n\033[32;1mMeduim green created\033[0m")
             elif select == "3":
                 base_image = Image.new('RGB', (self.width, self.height), color=self.light)
                 base_image.save('output/' + str(uuid.uuid4()) + '.png')
-                print("Dark grass created")
+                print("\n\033[32;1mLight green created\033[0m")
             elif select == "4":
                 base_image = Image.new('RGB', (self.width, self.height), color=self.sand)
                 base_image.save('output/' + str(uuid.uuid4()) + '.png')
-                print("Dark grass created")
+                print("\n\033[32;1mLight white created\033[0m")
             else:
                 print("Invalid input")
         else:
@@ -56,9 +56,9 @@ class Basemap:
                             \______/                                                                      |__/      
     """)
         if generate == "generate":
-            height = int(input("\033[32;1mEnter the height of the map: \033[0m"))
-            width = int(input("\033[32;1mEnter the width of the map: \033[0m"))
-            map_data = GenerateMap((height, width), x_starting_pos=random_seed(), y_starting_pos=random_seed())
+            self.height = int(input("\033[32;1mEnter the height of the map: \033[0m"))
+            self.width = int(input("\033[32;1mEnter the width of the map: \033[0m"))
+            map_data = GenerateMap((self.height, self.width), x_starting_pos=random_seed(), y_starting_pos=random_seed())
             mono_map = map_data.generate_map("Generate")
             Image.fromarray((mono_map).astype('uint8')).save('output/' + str(uuid.uuid4()) + '.png')
             print("\033[32;1mMap generated\033[0m")
