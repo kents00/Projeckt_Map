@@ -325,7 +325,7 @@ class Projeckt_Map:
                                         pady="0",
                                         text='''Generate''',)
 
-                self.Save_button = tk.Button(top, command=lambda:save(path=os.path.dirname("output/"), filetype="png"))
+                self.Save_button = tk.Button(top, command=lambda:save(path=os.path.dirname("output/"), filetype="jpeg"))
                 self.Save_button.place(relx=0.85, rely=0.867, height=24, width=67)
                 self.Save_button.configure(activebackground="#ececec",
                                         activeforeground="#000000",
